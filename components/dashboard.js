@@ -1,39 +1,51 @@
 // components/dashboard.js
 
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Button } from 'react-native';
-import firebase from '../database/firebase';
+import { StyleSheet, Button, View, Text } from 'react-native';
 
 export default class Dashboard extends Component {
-  constructor() {
-    super();
-    this.state = { 
-      uid: ''
-    }
-  }
-
-  signOut = () => {
-    firebase.auth().signOut().then(() => {
-      this.props.navigation.navigate('Login')
-    })
-    .catch(error => this.setState({ errorMessage: error.message }))
-  }  
-
-  render() {
-    this.state = { 
-      displayName: firebase.auth().currentUser.displayName,
-      uid: firebase.auth().currentUser.uid
-    }    
+    render() {
     return (
-      <View style={styles.container}>
-        <Text style = {styles.textStyle}>
-          Hello, {this.state.displayName}
-        </Text>
-
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Button
-          color="#3740FE"
-          title="Logout"
-          onPress={() => this.signOut()}
+          title="About the App"
+          onPress={() => this.props.navigation.navigate('ContactUs')}
+        />
+        <Button
+          title="Fast Facts"
+          onPress={() => this.props.navigation.navigate('ContactUs')}
+        />
+        <Button
+          title="Inclusive Shopping"
+          onPress={() => this.props.navigation.navigate('ContactUs')}
+        />
+        <Button
+          title="Inclusive Dining"
+          onPress={() => this.props.navigation.navigate('ContactUs')}
+        />
+        <Button
+          title="Inclusive Parks"
+          onPress={() => this.props.navigation.navigate('ContactUs')}
+        />
+        <Button
+          title="Other Inclusive Locations"
+          onPress={() => this.props.navigation.navigate('ContactUs')}
+        />
+        <Button
+          title="Inclusive Job Opportunities"
+          onPress={() => this.props.navigation.navigate('ContactUs')}
+        />
+        <Button
+          title="Inclusive Events"
+          onPress={() => this.props.navigation.navigate('ContactUs')}
+        />
+        <Button
+          title="Join the Online Community"
+          onPress={() => this.props.navigation.navigate('ContactUs')}
+        />
+        <Button
+          title="Contact Us"
+          onPress={() => this.props.navigation.navigate('ContactUs')}
         />
       </View>
     );
