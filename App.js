@@ -9,6 +9,7 @@ import Signup from './components/signup';
 import Dashboard from './components/dashboard';
 import ContactUs from './components/contactus';
 import AboutUs from './components/aboutus'
+import FastFacts from './components/fastfacts'
 
 const Stack = createStackNavigator();
 
@@ -50,6 +51,11 @@ function MyStack() {
        name="AboutUs" 
        component={AboutUs} 
        options={{ title: 'About Us' }}
+      />
+      <Stack.Screen 
+       name="FastFacts" 
+       component={FastFacts} 
+       options={{ title: 'Fast Facts' }}
       />
     </Stack.Navigator>
   );

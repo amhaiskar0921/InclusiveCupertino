@@ -13,7 +13,7 @@ export default class Dashboard extends Component {
         />
         <Button
           title="Fast Facts"
-          onPress={() => this.props.navigation.navigate('ContactUs')}
+          onPress={() => this.props.navigation.navigate('FastFacts')}
         />
         <Button
           title="Inclusive Shopping"
