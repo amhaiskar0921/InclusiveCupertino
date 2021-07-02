@@ -8,6 +8,7 @@ import Login from './components/login';
 import Signup from './components/signup';
 import Dashboard from './components/dashboard';
 import ContactUs from './components/contactus';
+import AboutUs from './components/aboutus'
 
 const Stack = createStackNavigator();
 
@@ -33,26 +34,22 @@ function MyStack() {
       <Stack.Screen 
         name="Login" 
         component={Login} 
-        options={
-          {title: 'Login'},
-          {headerLeft: null} 
-        }
+        options={{ title: 'Login' }}
       />
       <Stack.Screen 
        name="Dashboard" 
        component={Dashboard} 
-       options={
-         { title: 'Dashboard' },
-         {headerLeft: null} 
-       }
+       options={{ title: 'Dashboard' }}
       />
       <Stack.Screen 
        name="ContactUs" 
        component={ContactUs} 
-       options={
-         { title: 'Contact Us' },
-         {headerLeft: null} 
-       }
+       options={{ title: 'Contact Us' }}
+      />
+      <Stack.Screen 
+       name="AboutUs" 
+       component={AboutUs} 
+       options={{ title: 'About Us' }}
       />
     </Stack.Navigator>
   );

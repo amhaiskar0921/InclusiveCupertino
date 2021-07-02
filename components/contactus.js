@@ -8,13 +8,14 @@ export default class ContactUs extends Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text style={{ fontWeight: 'bold' }}>Email</Text>   
-        <Text>abc123@gmail.com</Text>
+        <Text style={{ fontWeight: 'bold' , fontSize: 25}}>Email</Text>   
+        <Text style={{fontSize: 20}}>InclusiveCupertino@gmail.com</Text>
         <Text> </Text>
-        <Text style={{ fontWeight: 'bold' }}>Phone Number</Text>
-        <Text>1800-222-1222</Text>
+        <Text style={{ fontWeight: 'bold' , fontSize: 25}}>Phone Number</Text>
+        <Text style={{fontSize: 20}}>1-800-INC-CUPR</Text>
         <Text> </Text>
-        <Text>If you have any questions, comments, or concerns, please reach out to us!</Text>
+        <Text style={{textAlign: 'center', fontSize: 20}}>If you have any questions, comments, or concerns, please reach out to us!</Text>
+        <Text> </Text>
         <Button
           title="Go to Dashboard"
           onPress={() => this.props.navigation.navigate('Dashboard')}
