@@ -8,7 +8,7 @@ export default class Dashboard extends Component {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Button
-          title="About the App"
+          title="About Us"
           onPress={() => this.props.navigation.navigate('AboutUs')}
         />
         <Button
@@ -41,7 +41,7 @@ export default class Dashboard extends Component {
         />
         <Button
           title="Join the Online Community"
-          onPress={() => this.props.navigation.navigate('ContactUs')}
+          onPress={() => this.props.navigation.navigate('OnlineCommunity')}
         />
         <Button
           title="Contact Us"

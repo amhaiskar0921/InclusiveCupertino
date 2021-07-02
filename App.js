@@ -10,6 +10,7 @@ import Dashboard from './components/dashboard';
 import ContactUs from './components/contactus';
 import AboutUs from './components/aboutus'
 import FastFacts from './components/fastfacts'
+import OnlineCommunity from './components/onlinecommunity';
 
 const Stack = createStackNavigator();
 
@@ -56,6 +57,11 @@ function MyStack() {
        name="FastFacts" 
        component={FastFacts} 
        options={{ title: 'Fast Facts' }}
+      />
+      <Stack.Screen 
+       name="OnlineCommunity" 
+       component={OnlineCommunity} 
+       options={{ title: 'Join the Online Community' }}
       />
     </Stack.Navigator>
   );
