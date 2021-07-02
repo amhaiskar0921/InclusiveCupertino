@@ -17,27 +17,23 @@ export default class Dashboard extends Component {
         />
         <Button
           title="Inclusive Shopping"
-          onPress={() => this.props.navigation.navigate('ContactUs')}
+          onPress={() => this.props.navigation.navigate('InclusiveShopping')}
         />
         <Button
           title="Inclusive Dining"
-          onPress={() => this.props.navigation.navigate('ContactUs')}
+          onPress={() => this.props.navigation.navigate('InclusiveDining')}
         />
         <Button
           title="Inclusive Parks"
-          onPress={() => this.props.navigation.navigate('ContactUs')}
+          onPress={() => this.props.navigation.navigate('InclusiveParks')}
         />
         <Button
           title="Other Inclusive Locations"
-          onPress={() => this.props.navigation.navigate('ContactUs')}
-        />
-        <Button
-          title="Inclusive Job Opportunities"
-          onPress={() => this.props.navigation.navigate('ContactUs')}
+          onPress={() => this.props.navigation.navigate('InclusiveOthers')}
         />
         <Button
           title="Inclusive Events"
-          onPress={() => this.props.navigation.navigate('ContactUs')}
+          onPress={() => this.props.navigation.navigate('InclusiveEvents')}
         />
         <Button
           title="Join the Online Community"

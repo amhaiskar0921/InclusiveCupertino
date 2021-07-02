@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import { Button, View, Text } from 'react-native';
+import { Linking } from 'react-native';
 
 export default class FastFacts extends Component {
 
@@ -15,12 +16,13 @@ export default class FastFacts extends Component {
         <Text style={{fontSize: 18, margin: 5}}>* The California Department of Developmental Services have over 350,000 clients with some form of physical and/or mental disability</Text>
         <Text style={{fontSize: 18, margin: 5}}>* Since the number of people with disabilities is already high and is continuing to increase, it is crucial for more inclusivity to be implemented in the community</Text>
         <Text style={{fontWeight: 'bold' , fontSize: 25}}>Sources</Text>
-        <Text style={{fontSize: 18}}>https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html</Text>
-        <Text style={{fontSize: 18, margin: 5}}>https://www.census.gov/library/stories/2021/03/united-states-childhood-disability-rate-up-in-2019-from-2008.html</Text>
-        <Text style={{fontSize: 18, margin: 5}}>https://www.ncbi.nlm.nih.gov/books/NBK11437/</Text>
-        <Text style={{fontSize: 18, margin: 5}}>https://www.cdc.gov/ncbddd/autism/data.html</Text>
-        <Text style={{fontSize: 18, margin: 5}}>https://www.dds.ca.gov</Text>
+        <Text style={{fontSize: 18, margin: 3}} onPress={() => Linking.openURL('https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html')}>1. CDC - Disability Impacts All of Us</Text>
+        <Text style={{fontSize: 18, margin: 3}} onPress={() => Linking.openURL('https://www.census.gov/library/stories/2021/03/united-states-childhood-disability-rate-up-in-2019-from-2008.html')}>2. US Census Bureau - U.S. Childhood Disability Rate Up in 2019 from 2008</Text>
+        <Text style={{fontSize: 18, margin: 3}} onPress={() => Linking.openURL('https://www.ncbi.nlm.nih.gov/books/NBK11437')}>3. NCBI - The Future of Disability in America</Text>
+        <Text style={{fontSize: 18, margin: 3}} onPress={() => Linking.openURL('https://www.cdc.gov/ncbddd/autism/data.html')}>4. CDC - Data and Statistics on Autism Spectrum Disorder</Text>
+        <Text style={{fontSize: 18, margin: 3}} onPress={() => Linking.openURL('https://www.dds.ca.gov')}>5. DDS - Department of Developmental Services</Text>
        </View>
     );
   }
 }
+

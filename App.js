@@ -11,6 +11,11 @@ import ContactUs from './components/contactus';
 import AboutUs from './components/aboutus'
 import FastFacts from './components/fastfacts'
 import OnlineCommunity from './components/onlinecommunity';
+import InclusiveDining from './components/inclusivedining';
+import InclusiveParks from './components/inclusiveparks';
+import InclusiveOthers from './components/inclusiveothers';
+import InclusiveEvents from './components/inclusiveevents';
+import InclusiveShopping from './components/inclusiveshopping';
 
 const Stack = createStackNavigator();
 
@@ -62,6 +67,31 @@ function MyStack() {
        name="OnlineCommunity" 
        component={OnlineCommunity} 
        options={{ title: 'Join the Online Community' }}
+      />
+      <Stack.Screen 
+       name="InclusiveDining" 
+       component={InclusiveDining} 
+       options={{ title: 'Inclusive Dining' }}
+      />
+      <Stack.Screen 
+       name="InclusiveParks" 
+       component={InclusiveParks} 
+       options={{ title: 'Inclusive Parks' }}
+      />
+      <Stack.Screen 
+       name="InclusiveOthers" 
+       component={InclusiveOthers} 
+       options={{ title: 'Other Inclusive Locations' }}
+      />
+      <Stack.Screen 
+       name="InclusiveEvents" 
+       component={InclusiveEvents} 
+       options={{ title: 'Inclusive Events' }}
+      />
+      <Stack.Screen 
+       name="InclusiveShopping" 
+       component={InclusiveShopping} 
+       options={{ title: 'Inclusive Shopping' }}
       />
     </Stack.Navigator>
   );
