@@ -1,4 +1,4 @@
-// components/Blog.js
+// components/contactus.js
 
 import React, { Component } from 'react';
 import { Button, View, Text } from 'react-native';
@@ -16,10 +16,6 @@ export default class ContactUs extends Component {
         <Text> </Text>
         <Text style={{textAlign: 'center', fontSize: 20}}>If you have any questions, comments, or concerns, please reach out to us!</Text>
         <Text> </Text>
-        <Button
-          title="Go to Dashboard"
-          onPress={() => this.props.navigation.navigate('Dashboard')}
-        />
       </View>
     );
   }

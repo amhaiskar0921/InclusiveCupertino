@@ -1,11 +1,15 @@
 // components/dashboard.js
 
 import React, { Component } from 'react';
-import { StyleSheet, Button, View, Text } from 'react-native';
+import { StyleSheet, Button, View, Text, ImageBackground } from 'react-native';
+
+const image = { uri: "https://media.istockphoto.com/vectors/frame-background-banner-blank-with-puzzle-jigsaw-colorful-pieces-vector-id1167277500?b=1&k=6&m=1167277500&s=612x612&w=0&h=CpwGElzzLg3eFpkJq9dYaGacYHF-g2562L-nagP1F28=" };
 
 export default class Dashboard extends Component {
     render() {
     return (
+      <View style = { styles.container } >
+      <ImageBackground  style= { styles.imgBackground } source={image} resizeMode='cover'>  
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Button
           title="About Us"
@@ -44,6 +48,8 @@ export default class Dashboard extends Component {
           onPress={() => this.props.navigation.navigate('ContactUs')}
         />
       </View>
+      </ImageBackground>
+    </View>
     );
   }
 }
@@ -60,5 +66,18 @@ const styles = StyleSheet.create({
   textStyle: {
     fontSize: 15,
     marginBottom: 20
-  }
+  },
+  imgBackground: {
+    width: '120%',
+    height: '100%',
+    flex: 1 
+},
+  backgroundImage:{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+    opacity: 0.3
+}
 });

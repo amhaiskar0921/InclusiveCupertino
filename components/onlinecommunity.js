@@ -1,4 +1,4 @@
-// components/Blog.js
+// components/onlinecommunity.js
 
 import React, { Component } from 'react';
 import { Button, View, Text, Image} from 'react-native';
